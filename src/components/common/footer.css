@@ -1,0 +1,128 @@
+/* Base styles */
+.footer-container {
+    background-color: #1a202c;
+    color: white;
+    padding: 3rem 0;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #e2e8f0;
+  }
+  
+  .footer-text {
+    color: #a0aec0;
+    line-height: 1.5;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .footer-link {
+    color: #a0aec0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-link:hover {
+    color: #4f46e5;
+  }
+  
+  .footer-address {
+    font-style: normal;
+    color: #a0aec0;
+    line-height: 1.5;
+  }
+  
+  .footer-address p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    margin-top: 1rem;
+  }
+  
+  .newsletter-input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: 1px solid #2d3748;
+    border-radius: 0.25rem 0 0 0.25rem;
+    background-color: #2d3748;
+    color: white;
+  }
+  
+  .newsletter-input::placeholder {
+    color: #718096;
+  }
+  
+  .newsletter-button {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 0 0.25rem 0.25rem 0;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .newsletter-button:hover {
+    background-color: #4338ca;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #2d3748;
+    padding-top: 1.5rem;
+    text-align: center;
+  }
+  
+  .copyright-text {
+    color: #718096;
+    font-size: 0.875rem;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .newsletter-form {
+      flex-direction: column;
+    }
+    
+    .newsletter-input {
+      border-radius: 0.25rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .newsletter-button {
+      border-radius: 0.25rem;
+    }
+  }
